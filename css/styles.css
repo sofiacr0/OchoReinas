@@ -1,0 +1,41 @@
+table {
+    border-collapse: collapse;
+    /*definimos el color de la linea*/
+    border: 3px solid;
+    border-top: none;
+    border: none;
+    display: inline;
+}
+
+tr {
+    border: 3px solid;
+}
+
+tr:nth-child(even) td:nth-child(even),
+tr:nth-child(odd) td:nth-child(odd) {
+    background: var(--background-color, white);
+}
+
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
+    background: var(--bgd-color, black);
+}
+
+td {
+    border: 3px solid;
+    width: 60px;
+    height: 60px;
+}
+
+select {
+    margin-left: 15px;
+    margin-top: 15px;
+    position: absolute;
+}
+
+div{
+    display: inline;
+    margin-top: 30px;
+    margin-left: 15px;
+    position: absolute;
+}
